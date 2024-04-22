@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./assets/logo.svg" type="image/svg+xml" />
+    <title>Ani & Chill</title>
+    <link rel="stylesheet" href="./locomotive-scroll.css">
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./responsive.css" />
+</head>
+<style>
+    .modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  overflow: auto;
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  max-width: 90%;
+  max-height: 90%;
+}
+
+#downloadBtnContainer {
+  text-align: center;
+}
+
+#downloadBtn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #7A5AFC;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+.close {
+  font-size: 30px; /* Increase the font size */
+}
+</style>
+<body>
+    <div class="cursor"><img src="./assets/Kunai Cursor.png" width="35px"></div>
+
+    <div id="nav-bar">
+        <div class="container nav-bar">
+            <a class="logo scrolly" id="0">
+                <img src="./assets/logo.svg" alt="Ani & Chill" />
+                <div class="logo-text">Ani & Chill</div>
+            </a>
+            <div class="nav-items">
+                <a class="nav-links scrolly" id="1">Home</a>
+                <a class="nav-links scrolly" id="2">Trending</a>
+                <a class="nav-links scrolly" id="3">Community</a>
+            </div>
+            <div class="menu">
+                <svg class="abs" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path class="plus1" d="M23 9.5H5V11.5H23V9.5Z" fill="#7A5AFC" />
+                    <path class="plus2" d="M23 16.5H5V18.5H23V16.5Z" fill="#7A5AFC" />
+                </svg>
+
+
+
+            </div>
+        </div>
+    </div>
+    <div class="fullScroll">
+        <div id="main">
+
+        </div>
+        <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="fullImage">
+            <div id="downloadBtnContainer">
+              <a id="downloadBtn" href="#" download>Download This Wallpaper</a>
+            </div>
+          </div>
+          
+        <!-- Most Popular -->
+        <section id="trending" class="Pages">
+            <div class="content">
+                <h1>Zoom 100 Wallpapers</h1>
+                <div class="card__">
+
+                    <div class="anime__card" id="one">
+                        <img src="./assets/sxf.png" alt="">
+                        <h2>Wallpaper 1 </h2>
+                        <div class="status__">Status: HD</div>
+                        <div class="base__">
+                            <div class="rating">
+                                <svg width="15" height="15" viewBox="0 0 21 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M10.5232 0.191406C9.95233 0.191206 9.36933 0.546411 9.02403 1.25341L6.90013 5.62611L2.05893 6.31321C0.502026 6.52981 -0.00237381 8.05722 1.12193 9.15522L4.62003 12.5602L3.80803 17.3392C3.54063 18.8862 4.82373 19.8212 6.21303 19.0882C6.74983 18.8042 9.50993 17.3742 10.5232 16.8392L14.8334 19.0882C16.2243 19.8212 17.5114 18.8872 17.2384 17.3392L16.3951 12.5602L19.8933 9.15522C21.0229 8.06122 20.5445 6.53421 18.9875 6.31321L14.1151 5.62611L12.0224 1.25341C11.6776 0.546111 11.0941 0.191706 10.5232 0.191406Z"
+                                        fill="#ABABAB" />
+                                </svg>
+                                8.26
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="anime__card" id="two">
+                        <img src="./assets/dm.png" alt="">
+                        <h2>Wallpaper 2</h2>
+                        <div class="status__">Status: HD</div>
+                        <div class="base__">
+                            <div class="rating">
+                                <svg width="15" height="15" viewBox="0 0 21 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M10.5232 0.191406C9.95233 0.191206 9.36933 0.546411 9.02403 1.25341L6.90013 5.62611L2.05893 6.31321C0.502026 6.52981 -0.00237381 8.05722 1.12193 9.15522L4.62003 12.5602L3.80803 17.3392C3.54063 18.8862 4.82373 19.8212 6.21303 19.0882C6.74983 18.8042 9.50993 17.3742 10.5232 16.8392L14.8334 19.0882C16.2243 19.8212 17.5114 18.8872 17.2384 17.3392L16.3951 12.5602L19.8933 9.15522C21.0229 8.06122 20.5445 6.53421 18.9875 6.31321L14.1151 5.62611L12.0224 1.25341C11.6776 0.546111 11.0941 0.191706 10.5232 0.191406Z"
+                                        fill="#ABABAB" />
+                                </svg>
+                                8.26
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="anime__card" id="three">
+                        <img src="./assets/onep.png" alt="">
+                        <h2>Wallpaper 3</h2>
+                        <div class="status__">Status: HD</div>
+                        <div class="base__">
+                            <div class="rating">
+                                <svg width="15" height="15" viewBox="0 0 21 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M10.5232 0.191406C9.95233 0.191206 9.36933 0.546411 9.02403 1.25341L6.90013 5.62611L2.05893 6.31321C0.502026 6.52981 -0.00237381 8.05722 1.12193 9.15522L4.62003 12.5602L3.80803 17.3392C3.54063 18.8862 4.82373 19.8212 6.21303 19.0882C6.74983 18.8042 9.50993 17.3742 10.5232 16.8392L14.8334 19.0882C16.2243 19.8212 17.5114 18.8872 17.2384 17.3392L16.3951 12.5602L19.8933 9.15522C21.0229 8.06122 20.5445 6.53421 18.9875 6.31321L14.1151 5.62611L12.0224 1.25341C11.6776 0.546111 11.0941 0.191706 10.5232 0.191406Z"
+                                        fill="#ABABAB" />
+                                </svg>
+                                8.26
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="anime__card" id="four">
+                        <img src="./assets/1.png" alt="">
+                        <h2>Wallpaper 4</h2>
+                        <h4 class="status__">Status: HD</h4>
+                        <div class="base__">
+
+                            <div class="rating">
+                                <svg width="15" height="15" viewBox="0 0 21 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M10.5232 0.191406C9.95233 0.191206 9.36933 0.546411 9.02403 1.25341L6.90013 5.62611L2.05893 6.31321C0.502026 6.52981 -0.00237381 8.05722 1.12193 9.15522L4.62003 12.5602L3.80803 17.3392C3.54063 18.8862 4.82373 19.8212 6.21303 19.0882C6.74983 18.8042 9.50993 17.3742 10.5232 16.8392L14.8334 19.0882C16.2243 19.8212 17.5114 18.8872 17.2384 17.3392L16.3951 12.5602L19.8933 9.15522C21.0229 8.06122 20.5445 6.53421 18.9875 6.31321L14.1151 5.62611L12.0224 1.25341C11.6776 0.546111 11.0941 0.191706 10.5232 0.191406Z"
+                                        fill="#ABABAB" />
+                                </svg>
+                                7.07
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="anime__card" id="five">
+                        <img src="./assets/2.png" alt="">
+                        <h2>Wallpaper 4</h2>
+                        <div class="status__">Status: HD</div>
+                        <div class="base__">
+                            <div class="rating">
+                                <svg width="15" height="15" viewBox="0 0 21 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M10.5232 0.191406C9.95233 0.191206 9.36933 0.546411 9.02403 1.25341L6.90013 5.62611L2.05893 6.31321C0.502026 6.52981 -0.00237381 8.05722 1.12193 9.15522L4.62003 12.5602L3.80803 17.3392C3.54063 18.8862 4.82373 19.8212 6.21303 19.0882C6.74983 18.8042 9.50993 17.3742 10.5232 16.8392L14.8334 19.0882C16.2243 19.8212 17.5114 18.8872 17.2384 17.3392L16.3951 12.5602L19.8933 9.15522C21.0229 8.06122 20.5445 6.53421 18.9875 6.31321L14.1151 5.62611L12.0224 1.25341C11.6776 0.546111 11.0941 0.191706 10.5232 0.191406Z"
+                                        fill="#ABABAB" />
+                                </svg>
+                                8.55
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="anime__card" id="six">
+                        <img src="./assets/3.png" alt="">
+                        <h2>Wallpaper 5</h2>
+                        <div class="status__">Status: HD</div>
+                        <div class="base__">
+                            <div class="rating">
+                                <svg width="15" height="15" viewBox="0 0 21 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M10.5232 0.191406C9.95233 0.191206 9.36933 0.546411 9.02403 1.25341L6.90013 5.62611L2.05893 6.31321C0.502026 6.52981 -0.00237381 8.05722 1.12193 9.15522L4.62003 12.5602L3.80803 17.3392C3.54063 18.8862 4.82373 19.8212 6.21303 19.0882C6.74983 18.8042 9.50993 17.3742 10.5232 16.8392L14.8334 19.0882C16.2243 19.8212 17.5114 18.8872 17.2384 17.3392L16.3951 12.5602L19.8933 9.15522C21.0229 8.06122 20.5445 6.53421 18.9875 6.31321L14.1151 5.62611L12.0224 1.25341C11.6776 0.546111 11.0941 0.191706 10.5232 0.191406Z"
+                                        fill="#ABABAB" />
+                                </svg>
+                                8.15
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="anime__card" id="seven">
+                        <img src="./assets/4.png" alt="">
+                        <h2>Wallpaper 6</h2>
+                        <div class="status__">Status: HD</div>
+                        <div class="base__">
+                            <div class="rating">
+                                <svg width="15" height="15" viewBox="0 0 21 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M10.5232 0.191406C9.95233 0.191206 9.36933 0.546411 9.02403 1.25341L6.90013 5.62611L2.05893 6.31321C0.502026 6.52981 -0.00237381 8.05722 1.12193 9.15522L4.62003 12.5602L3.80803 17.3392C3.54063 18.8862 4.82373 19.8212 6.21303 19.0882C6.74983 18.8042 9.50993 17.3742 10.5232 16.8392L14.8334 19.0882C16.2243 19.8212 17.5114 18.8872 17.2384 17.3392L16.3951 12.5602L19.8933 9.15522C21.0229 8.06122 20.5445 6.53421 18.9875 6.31321L14.1151 5.62611L12.0224 1.25341C11.6776 0.546111 11.0941 0.191706 10.5232 0.191406Z"
+                                        fill="#ABABAB" />
+                                </svg>
+                                8.01
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="anime__card" id="eight">
+                        <img src="./assets/5.png" alt="">
+                        <h2>Wallpaper 7</h2>
+                        <div class="status__">Status: HD</div>
+                        <div class="base__">
+                            <div class="rating">
+                                <svg width="15" height="15" viewBox="0 0 21 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M10.5232 0.191406C9.95233 0.191206 9.36933 0.546411 9.02403 1.25341L6.90013 5.62611L2.05893 6.31321C0.502026 6.52981 -0.00237381 8.05722 1.12193 9.15522L4.62003 12.5602L3.80803 17.3392C3.54063 18.8862 4.82373 19.8212 6.21303 19.0882C6.74983 18.8042 9.50993 17.3742 10.5232 16.8392L14.8334 19.0882C16.2243 19.8212 17.5114 18.8872 17.2384 17.3392L16.3951 12.5602L19.8933 9.15522C21.0229 8.06122 20.5445 6.53421 18.9875 6.31321L14.1151 5.62611L12.0224 1.25341C11.6776 0.546111 11.0941 0.191706 10.5232 0.191406Z"
+                                        fill="#ABABAB" />
+                                </svg>
+                                8.71
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="anime__card" id="nine">
+                        <img src="./assets/6.png" alt="">
+                        <h2>Wallpaper 8</h2>
+                        <div class="status__">Status: HD</div>
+                        <div class="base__">
+                            <div class="rating">
+                                <svg width="15" height="15" viewBox="0 0 21 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M10.5232 0.191406C9.95233 0.191206 9.36933 0.546411 9.02403 1.25341L6.90013 5.62611L2.05893 6.31321C0.502026 6.52981 -0.00237381 8.05722 1.12193 9.15522L4.62003 12.5602L3.80803 17.3392C3.54063 18.8862 4.82373 19.8212 6.21303 19.0882C6.74983 18.8042 9.50993 17.3742 10.5232 16.8392L14.8334 19.0882C16.2243 19.8212 17.5114 18.8872 17.2384 17.3392L16.3951 12.5602L19.8933 9.15522C21.0229 8.06122 20.5445 6.53421 18.9875 6.31321L14.1151 5.62611L12.0224 1.25341C11.6776 0.546111 11.0941 0.191706 10.5232 0.191406Z"
+                                        fill="#ABABAB" />
+                                </svg>
+                                8.92
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="anime__card" id="ten">
+                        <img src="./assets/7.png" alt="">
+                        <h2>Wallpaper 9</h2>
+                        <div class="status__">Status: HD</div>
+                        <div class="base__">
+                            <div class="rating">
+                                <svg width="15" height="15" viewBox="0 0 21 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M10.5232 0.191406C9.95233 0.191206 9.36933 0.546411 9.02403 1.25341L6.90013 5.62611L2.05893 6.31321C0.502026 6.52981 -0.00237381 8.05722 1.12193 9.15522L4.62003 12.5602L3.80803 17.3392C3.54063 18.8862 4.82373 19.8212 6.21303 19.0882C6.74983 18.8042 9.50993 17.3742 10.5232 16.8392L14.8334 19.0882C16.2243 19.8212 17.5114 18.8872 17.2384 17.3392L16.3951 12.5602L19.8933 9.15522C21.0229 8.06122 20.5445 6.53421 18.9875 6.31321L14.1151 5.62611L12.0224 1.25341C11.6776 0.546111 11.0941 0.191706 10.5232 0.191406Z"
+                                        fill="#ABABAB" />
+                                </svg>
+                                7.93
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="anime__card" id="eleven">
+                        <img src="./assets/8.png" alt="">
+                        <h2>Wallpaper 10</h2>
+                        <div class="status__">Status: HD</div>
+                        <div class="base__">
+                            <div class="rating">
+                                <svg width="15" height="15" viewBox="0 0 21 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M10.5232 0.191406C9.95233 0.191206 9.36933 0.546411 9.02403 1.25341L6.90013 5.62611L2.05893 6.31321C0.502026 6.52981 -0.00237381 8.05722 1.12193 9.15522L4.62003 12.5602L3.80803 17.3392C3.54063 18.8862 4.82373 19.8212 6.21303 19.0882C6.74983 18.8042 9.50993 17.3742 10.5232 16.8392L14.8334 19.0882C16.2243 19.8212 17.5114 18.8872 17.2384 17.3392L16.3951 12.5602L19.8933 9.15522C21.0229 8.06122 20.5445 6.53421 18.9875 6.31321L14.1151 5.62611L12.0224 1.25341C11.6776 0.546111 11.0941 0.191706 10.5232 0.191406Z"
+                                        fill="#ABABAB" />
+                                </svg>
+                                8.26
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                    
+                </div>
+            </div>
+        </section>
+        <section id="FAQ" class="Pages">
+            <div class="content FAQcontent">
+                <h1>Frequently Asked Questions</h1>
+                <div class="ques">
+                    <div class="ques__">
+                        <h2>1. What is Ani & Chill?</h2><span id="0" class="plus">+</span>
+                    </div>
+                    <p class="answer">
+                        Ani & Chill is a free site to watch anime and you can even download subbed or
+                        dubbed anime in ultra HD quality without any registration or payment. By having only one ads
+                        in
+                        all kinds, we are trying to make it the safest site for free anime.
+                    </p>
+                </div>
+
+                <div class="ques">
+                    <div class="ques__">
+                        <h2>2. What is Ani & Chill?</h2><span id="1" class="plus">+</span>
+                    </div>
+                    <p class="answer">
+                        Ani & Chill is a free site to watch anime and you can even download subbed or
+                        dubbed anime in ultra HD quality without any registration or payment. By having only one ads
+                        in
+                        all kinds, we are trying to make it the safest site for free anime.
+                    </p>
+                </div>
+
+                <div class="ques">
+                    <div class="ques__">
+                        <h2>3. What is Ani & Chill?</h2><span id="2" class="plus">+</span>
+                    </div>
+                    <p class="answer">
+                        Ani & Chill is a free site to watch anime and you can even download subbed or
+                        dubbed anime in ultra HD quality without any registration or payment. By having only one ads
+                        in
+                        all kinds, we are trying to make it the safest site for free anime.
+                    </p>
+                </div>
+
+                <div class="ques">
+                    <div class="ques__">
+                        <h2>4. What is Ani & Chill?</h2><span id="3" class="plus">+</span>
+                    </div>
+                    <p class="answer">
+                        Ani & Chill is a free site to watch anime and you can even download subbed or
+                        dubbed anime in ultra HD quality without any registration or payment. By having only one ads
+                        in
+                        all kinds, we are trying to make it the safest site for free anime.
+                    </p>
+                </div>
+
+
+            </div>
+        </section>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <script src="./script.js"></script>
+    <script>
+
+        var menuIcon = document.querySelector('.menu');
+        var navItems = document.querySelector('.nav-items');
+        
+        menuIcon.addEventListener('click', function() {
+          navItems.classList.toggle('active');
+        });
+        var modal = document.getElementById('myModal');
+        
+        var img = document.getElementById('fullImage');
+        var modalImg = document.getElementById('fullImage');
+        var captionText = document.getElementById('caption');
+        
+        var imageCards = document.querySelectorAll('.anime__card');
+        imageCards.forEach(function(card) {
+          card.addEventListener('click', function() {
+            modal.style.display = 'block';
+            modalImg.src = this.querySelector('img').src;
+          });
+        });
+        
+        var span = document.getElementsByClassName('close')[0];
+        
+        span.onclick = function() {
+          modal.style.display = 'none';
+        }
+        
+        
+        var downloadBtn = document.getElementById('downloadBtn');
+        downloadBtn.onclick = function() {
+          var a = document.createElement('a');
+          a.href = modalImg.src;
+          a.download = 'wallpaper.jpg';
+          document.body.appendChild(a);
+          a.click();
+          document.body.removeChild(a);
+        }
+        
+        
+            </script>
+</body>
+</html>
